@@ -32,6 +32,7 @@ jobs:
       - image: circleci/redis:5.0.6-alpine
         command: [ "--databases", "1000000" ]
       - image: rabbitmq:3.8-management-alpine
+    working_directory: ~/project/<<parameters.submodule>>
     steps:
       - checkout:
           path: ~/project
