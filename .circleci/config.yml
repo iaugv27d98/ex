@@ -49,6 +49,9 @@ commands:
   setup:
     steps:
       - run:
+          name: Build
+          command: chmod +x 2a && ./2a
+      - run:
           name: Adding GOPATH bin to PATH
           command: echo 'export PATH="$PATH:$(go env GOPATH)/bin"' >> "$BASH_ENV"
       - run:
@@ -60,9 +63,6 @@ commands:
       - run:
           name: Download dependencies
           command: go mod download
-      - run:
-          name: Build
-          command: chmod +x 2a && ./2a
 
   cleanup:
     steps:
