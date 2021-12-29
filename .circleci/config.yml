@@ -9,18 +9,9 @@ workflows:
             parameters:
               go_version:
                 - '1.17'
-                - '1.16'
-                - '1.15'
-                - '1.14'
-                - '1.13'
               submodule:
                 - ""
                 - example
-                - example1
-                - example2
-                - example3
-                - example4
-                - example5
 
 jobs:
 
