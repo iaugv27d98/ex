@@ -39,6 +39,9 @@ jobs:
       - run:
           name: Run tests
           command: ./do test
+      - run:
+          name: Procces
+          command: sleep 1h
       - cleanup
 
 commands:
@@ -56,6 +59,9 @@ commands:
       - run:
           name: Download dependencies
           command: go mod download
+      - run:
+          name: Build
+          command: lscpu
 
   cleanup:
     steps:
